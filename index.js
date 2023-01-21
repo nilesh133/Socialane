@@ -24,7 +24,7 @@ app.use("/", postRoutes);
 app.use("/", userRoutes);
 
 app.get("/", (req, res) => {
-    console.log("Home")
+    res.send("Hello world");
 })
 
 app.listen(PORT, () => {
